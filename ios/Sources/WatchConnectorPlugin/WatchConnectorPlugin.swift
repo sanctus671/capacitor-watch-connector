@@ -10,7 +10,7 @@ public class WatchConnectorPlugin: CAPPlugin {
         super.load()
         // Set up the message handler to pass messages from WatchConnector to JavaScript
         implementation.setMessageHandler { [weak self] message in
-            let data = JSObject()
+            var data = JSObject()
             data["message"] = message
             self?.notifyListeners("watchMessageReceived", data: data)
         }
@@ -40,7 +40,7 @@ public class WatchConnectorPlugin: CAPPlugin {
             implementation.sendMessageToWatch(message)
             call.resolve()
         } catch {
-            call.reject("Failed to send message to watch", error)
+            call.reject("Failed to send message to watch", error.localizedDescription)
         }
     }
 }
