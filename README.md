@@ -11,9 +11,58 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`echo(...)`](#echo)
+* [`sendMessageToWatch(...)`](#sendmessagetowatch)
+* [`addListener('watchMessageReceived', ...)`](#addlistenerwatchmessagereceived-)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### echo(...)
+
+```typescript
+echo(options: { value: string; }) => Promise<{ value: string; }>
+```
+
+| Param         | Type                            |
+| ------------- | ------------------------------- |
+| **`options`** | <code>{ value: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### sendMessageToWatch(...)
+
+```typescript
+sendMessageToWatch(options: { message: string; }) => Promise<void>
+```
+
+| Param         | Type                              |
+| ------------- | --------------------------------- |
+| **`options`** | <code>{ message: string; }</code> |
+
+--------------------
+
+
+### addListener('watchMessageReceived', ...)
+
+```typescript
+addListener(eventName: 'watchMessageReceived', listenerFunc: (data: { message: string; }) => void) => Promise<any>
+```
+
+| Param              | Type                                                 |
+| ------------------ | ---------------------------------------------------- |
+| **`eventName`**    | <code>'watchMessageReceived'</code>                  |
+| **`listenerFunc`** | <code>(data: { message: string; }) =&gt; void</code> |
+
+**Returns:** <code>Promise&lt;any&gt;</code>
+
+--------------------
+
 </docgen-api>
