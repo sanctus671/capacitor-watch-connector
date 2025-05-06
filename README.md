@@ -5,7 +5,7 @@ Bridge plugin to connect Capacitor apps to Wear OS and Watch OS devices.
 ## Install
 
 ```bash
-npm install capacitor-watch-connector
+npm install sanctus671/capacitor-watch-connector
 npx cap sync
 ```
 
