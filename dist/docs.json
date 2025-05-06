@@ -1,0 +1,68 @@
+{
+  "api": {
+    "name": "WatchConnectorPlugin",
+    "slug": "watchconnectorplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "echo",
+        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "echo"
+      },
+      {
+        "name": "sendMessageToWatch",
+        "signature": "(options: { message: string; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ message: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "sendmessagetowatch"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'watchMessageReceived', listenerFunc: (data: { message: string; }) => void) => Promise<any>",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'watchMessageReceived'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(data: { message: string; }) => void"
+          }
+        ],
+        "returns": "Promise<any>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "addlistenerwatchmessagereceived-"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
